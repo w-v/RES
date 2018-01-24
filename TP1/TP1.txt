@@ -86,9 +86,9 @@ La source 00:1b:77:d2:d2:27 et toutes les autres machines du réseau.
 
 3.3
 
-Récupérer l'adresse du site de la RATP.
+Récupérer l'adresse IP du site de la RATP d'après son nom de domaine, en faisant une requête au serveur DNS.
 
 La différence entre les trames 3, 5 et les trames 4, 6 est que les premières sont des requêtes et les secondes sont des réponses.
-La différence entre les trames 3, 4 et les trames 5, 6 est le type de requête. L'un est en A, l'autre en AAAA c'est à dire des adresses aux formats IPv4 et IPv6 respectivement.
+La différence entre les trames 3, 4 et les trames 5, 6 est le type de requête. L'un est en A, l'autre en AAAA c'est à dire des adresses IP aux formats IPv4 et IPv6 respectivement.
 
 
