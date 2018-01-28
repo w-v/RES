@@ -91,4 +91,54 @@ Récupérer l'adresse IP du site de la RATP d'après son nom de domaine, en fais
 La différence entre les trames 3, 5 et les trames 4, 6 est que les premières sont des requêtes et les secondes sont des réponses.
 La différence entre les trames 3, 4 et les trames 5, 6 est le type de requête. L'un est en A, l'autre en AAAA c'est à dire des adresses IP aux formats IPv4 et IPv6 respectivement.
 
+3.4
 
+Le protocole de transport associé au protocole applicatif DNS dans les trames 3 à 6 est UDP.
+
+Les fonctionnalités de ce protocole sont de permettre la transmission de données (sous forme de datagrammes) de manière très simple entre deux entités, chacune étant définie par une adresse IP et un numéro de port.
+Aucune communication préalable n'est requise pour établir la connexion, au contraire de TCP (qui utilise le procédé de handshaking).
+UDP utilise un mode de transmission sans connexion. Il est utile pour transmettre de petites quantités de données.
+
+3.5
+
+Voir 3.3
+
+3.6
+
+C'est pour charger les différentes ressources présentes sur la page web du site de la RATP (qui sont référencées dans le code HTML, le logo par exemple sous format GIF).
+
+3.7
+
+Le protocole de transport utilisé à partir de la trame 7 est TCP. Contrairement à l'UDP, ce protocole de transport utilise une sécurité de transmission avec un système REQ/ACK.
+Il est utilisé pour transmettre de plus grosse quantités de données avec une grande fiabilité.
+La principale différence dans l'en-tête de ces deux protocoles est la présence de Aknowledgement dans celui du protocole de UDP.
+
+3.8
+
+On applique le filtre suivant : 
+
+http
+
+3.9
+
+La trame 45 correspond à une page HTML. C'est une des trois parties de la réponse suite à une requête. Les autres parties de la réponse sont les trames 49 et 52.
+
+3.10
+
+C'est pour récupérer l'adresse IP du site log5.xiti.com sur lequel est hébergé une image référencée sur la page HTML du site ratp.fr
+
+ex4.10
+
+4.11
+
+Ce sont des protocoles TCP et TLSv1.2.
+Pour le protocole TCP voir questions exercice 3.
+Pour le protocole TLSv1.2 (il s'agit du successeur du protocole SSL), son utilité est de garantir la confidentialité et l'integrité des données communiquées entre deux machines en utilisant la cryptographie.
+
+4.12
+
+Les protocoles utilisés dans les captures précédentes n'utilisent pas la cryptographie pour encoder leurs données.
+
+4.13
+
+Les avantages constatés par l'utilisation de protocoles HTTPS est la confidentialité des informations transmises et la protection face à une éventuelle attaque Man-in-the-middle.
