@@ -1,3 +1,9 @@
+Robin ADILI
+Pablo TOMAS
+
+Groupe 1.1
+
+
 TP1
 
 exercice 1 :
@@ -95,8 +101,8 @@ La différence entre les trames 3, 4 et les trames 5, 6 est le type de requête.
 
 Le protocole de transport associé au protocole applicatif DNS dans les trames 3 à 6 est UDP.
 
-Les fonctionnalités de ce protocole sont de permettre la transmission de données (sous forme de datagrammes) de manière très simple entre deux entités, chacune étant définie par une adresse IP et un numéro de port.
-Aucune communication préalable n'est requise pour établir la connexion, au contraire de TCP (qui utilise le procédé de handshaking).
+Les fonctionnalités de ce protocole sont de permettre la transmission de données de manière très simple entre deux machines, chacune étant identifiée par une adresse IP et un numéro de port.
+Aucune communication n'est utilisée pour établir la connexion, au contraire de TCP (qui utilise un  handshake).
 UDP utilise un mode de transmission sans connexion. Il est utile pour transmettre de petites quantités de données.
 
 3.5
@@ -111,7 +117,7 @@ C'est pour charger les différentes ressources présentes sur la page web du sit
 
 Le protocole de transport utilisé à partir de la trame 7 est TCP. Contrairement à l'UDP, ce protocole de transport utilise une sécurité de transmission avec un système REQ/ACK.
 Il est utilisé pour transmettre de plus grosse quantités de données avec une grande fiabilité.
-La principale différence dans l'en-tête de ces deux protocoles est la présence de Aknowledgement dans celui du protocole de UDP.
+La principale différence dans l'en-tête de ces deux protocoles est la présence d'un handshake, du renvoie des paquets non transmis et de codes de correction d'erreurs en TCP
 
 3.8
 
